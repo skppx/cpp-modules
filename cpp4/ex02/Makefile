@@ -1,9 +1,10 @@
-NAME	=	Polymorph
+NAME	=	APolymorph
 SRCS	=	Animal.cpp\
 			Cat.cpp\
 			Dog.cpp\
 			WrongAnimal.cpp\
 			WrongCat.cpp\
+			Brain.cpp\
 			main.cpp\
 
 CC		=	c++

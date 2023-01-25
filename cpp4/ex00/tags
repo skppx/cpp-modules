@@ -1,6 +1,47 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+ANIMAL_HPP	Animal.hpp	/^#define ANIMAL_HPP$/;"	d
+Animal	Animal.cpp	/^Animal::Animal(): _type("animal")$/;"	f	class:Animal
+Animal	Animal.cpp	/^Animal::Animal(const Animal& copy)$/;"	f	class:Animal
+Animal	Animal.hpp	/^class Animal$/;"	c
+CAT_HPP	Cat.hpp	/^#define CAT_HPP$/;"	d
+Cat	Cat.cpp	/^Cat::Cat(): Animal()$/;"	f	class:Cat
+Cat	Cat.cpp	/^Cat::Cat(const Cat &copy): Animal()$/;"	f	class:Cat
+Cat	Cat.hpp	/^class Cat : public Animal$/;"	c
+DOG_HPP	Dog.hpp	/^#define DOG_HPP$/;"	d
+Dog	Dog.cpp	/^Dog::Dog(): Animal()$/;"	f	class:Dog
+Dog	Dog.cpp	/^Dog::Dog(const Dog &copy): Animal()$/;"	f	class:Dog
+Dog	Dog.hpp	/^class Dog : public Animal$/;"	c
+WRONGANIMAL_HPP	WrongAnimal.hpp	/^#define WRONGANIMAL_HPP$/;"	d
+WRONGCAT_HPP	WrongCat.hpp	/^#define WRONGCAT_HPP$/;"	d
+WrongAnimal	WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(): _type("wronganimal")$/;"	f	class:WrongAnimal
+WrongAnimal	WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(const WrongAnimal& copy)$/;"	f	class:WrongAnimal
+WrongAnimal	WrongAnimal.hpp	/^class WrongAnimal$/;"	c
+WrongCat	WrongCat.cpp	/^WrongCat::WrongCat(): WrongAnimal()$/;"	f	class:WrongCat
+WrongCat	WrongCat.cpp	/^WrongCat::WrongCat(const WrongCat &copy): WrongAnimal(copy)$/;"	f	class:WrongCat
+WrongCat	WrongCat.hpp	/^class WrongCat : public WrongAnimal$/;"	c
+_type	Animal.hpp	/^		std::string _type;$/;"	m	class:Animal	typeref:typename:std::string
+_type	WrongAnimal.hpp	/^		std::string _type;$/;"	m	class:WrongAnimal	typeref:typename:std::string
+getType	Animal.cpp	/^std::string Animal::getType(void)const$/;"	f	class:Animal	typeref:typename:std::string
+getType	WrongAnimal.cpp	/^std::string WrongAnimal::getType(void)const$/;"	f	class:WrongAnimal	typeref:typename:std::string
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+makeSound	Animal.cpp	/^void Animal::makeSound(void)const$/;"	f	class:Animal	typeref:typename:void
+makeSound	Cat.cpp	/^void	Cat::makeSound(void)const$/;"	f	class:Cat	typeref:typename:void
+makeSound	Dog.cpp	/^void	Dog::makeSound(void)const$/;"	f	class:Dog	typeref:typename:void
+makeSound	WrongAnimal.cpp	/^void WrongAnimal::makeSound(void)const$/;"	f	class:WrongAnimal	typeref:typename:void
+makeSound	WrongCat.cpp	/^void	WrongCat::makeSound(void)const$/;"	f	class:WrongCat	typeref:typename:void
+operator =	Animal.cpp	/^Animal& Animal::operator=(const Animal& copy)$/;"	f	class:Animal	typeref:typename:Animal &
+operator =	Cat.cpp	/^Cat &Cat::operator=(const Cat &copy)$/;"	f	class:Cat	typeref:typename:Cat &
+operator =	Dog.cpp	/^Dog &Dog::operator=(const Dog &copy)$/;"	f	class:Dog	typeref:typename:Dog &
+operator =	WrongAnimal.cpp	/^WrongAnimal& WrongAnimal::operator=(const WrongAnimal& copy)$/;"	f	class:WrongAnimal	typeref:typename:WrongAnimal &
+operator =	WrongCat.cpp	/^WrongCat &WrongCat::operator=(const WrongCat &copy)$/;"	f	class:WrongCat	typeref:typename:WrongCat &
+~Animal	Animal.cpp	/^Animal::~Animal()$/;"	f	class:Animal
+~Cat	Cat.cpp	/^Cat::~Cat()$/;"	f	class:Cat
+~Dog	Dog.cpp	/^Dog::~Dog()$/;"	f	class:Dog
+~WrongAnimal	WrongAnimal.cpp	/^WrongAnimal::~WrongAnimal()$/;"	f	class:WrongAnimal
+~WrongCat	WrongCat.cpp	/^WrongCat::~WrongCat()$/;"	f	class:WrongCat

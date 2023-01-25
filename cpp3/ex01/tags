@@ -1,6 +1,31 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+CLAPTRAP_HPP	ClapTrap.hpp	/^# define CLAPTRAP_HPP$/;"	d
+ClapTrap	ClapTrap.cpp	/^ClapTrap::ClapTrap() : _name("noName"), _hitPoints(10), _energyPoints(10), _attackDamage(0)$/;"	f	class:ClapTrap
+ClapTrap	ClapTrap.cpp	/^ClapTrap::ClapTrap(const ClapTrap &copy)$/;"	f	class:ClapTrap
+ClapTrap	ClapTrap.cpp	/^ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDa/;"	f	class:ClapTrap
+ClapTrap	ClapTrap.hpp	/^class ClapTrap$/;"	c
+SCAVTRAP_HPP	ScavTrap.hpp	/^# define SCAVTRAP_HPP$/;"	d
+ScavTrap	ScavTrap.cpp	/^ScavTrap::ScavTrap() : ClapTrap()\/\/_name("noName"),  _hitPoints(100), _energyPoints(50), _atta/;"	f	class:ScavTrap
+ScavTrap	ScavTrap.cpp	/^ScavTrap::ScavTrap(const ScavTrap &copy)$/;"	f	class:ScavTrap
+ScavTrap	ScavTrap.cpp	/^ScavTrap::ScavTrap(std::string name) : ClapTrap(name)\/\/ _name(name), _hitPoints(10), _energyPo/;"	f	class:ScavTrap
+ScavTrap	ScavTrap.hpp	/^class ScavTrap : public ClapTrap$/;"	c
+_attackDamage	ClapTrap.hpp	/^		unsigned int	_attackDamage;$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_energyPoints	ClapTrap.hpp	/^		unsigned int	_energyPoints;$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_hitPoints	ClapTrap.hpp	/^		unsigned int	_hitPoints;$/;"	m	class:ClapTrap	typeref:typename:unsigned int
+_name	ClapTrap.hpp	/^		std::string		_name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+attack	ClapTrap.cpp	/^void	ClapTrap::attack(const std::string& target)$/;"	f	class:ClapTrap	typeref:typename:void
+attack	ScavTrap.cpp	/^void	ScavTrap::attack(const std::string& target)$/;"	f	class:ScavTrap	typeref:typename:void
+beRepaired	ClapTrap.cpp	/^void	ClapTrap::beRepaired(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+guardGate	ScavTrap.cpp	/^void	ScavTrap::guardGate()$/;"	f	class:ScavTrap	typeref:typename:void
+main	main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+operator =	ClapTrap.cpp	/^ClapTrap &ClapTrap::operator = (const ClapTrap &copy)$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	ScavTrap.cpp	/^ScavTrap &ScavTrap::operator = (const ScavTrap &copy)$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+takeDamage	ClapTrap.cpp	/^void	ClapTrap::takeDamage(unsigned int amount)$/;"	f	class:ClapTrap	typeref:typename:void
+~ClapTrap	ClapTrap.cpp	/^ClapTrap::~ClapTrap()$/;"	f	class:ClapTrap
+~ScavTrap	ScavTrap.cpp	/^ScavTrap::~ScavTrap()$/;"	f	class:ScavTrap
