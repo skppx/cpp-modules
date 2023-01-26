@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+BUREAUCRAT_HPP	Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : _name("Default"), _grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(const Bureaucrat &copy)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string name, unsigned int grade) : _name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+FORM_HPP	Form.hpp	/^#define FORM_HPP$/;"	d
+Form	Form.cpp	/^Form::Form() : _is_signed(false)$/;"	f	class:Form
+Form	Form.cpp	/^Form::Form(const Form &copy)$/;"	f	class:Form
+Form	Form.hpp	/^class Form$/;"	c
+GradeTooHighException	Bureaucrat.hpp	/^	  class	GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooHighException	Form.hpp	/^	  class	GradeTooHighException : public std::exception$/;"	c	class:Form
+GradeTooLowException	Bureaucrat.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	Form.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Form
+_exec_grade	Form.hpp	/^	  unsigned const int	_exec_grade;$/;"	m	class:Form	typeref:typename:unsigned const int
+_grade	Bureaucrat.hpp	/^	  unsigned int	_grade;$/;"	m	class:Bureaucrat	typeref:typename:unsigned int
+_is_signed	Form.hpp	/^	  bool					_is_signed;$/;"	m	class:Form	typeref:typename:bool
+_name	Bureaucrat.hpp	/^	  std::string	_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string
+_name	Form.hpp	/^	  std::string			_name;$/;"	m	class:Form	typeref:typename:std::string
+_sign_grade	Form.hpp	/^	  unsigned const int	_sign_grade;$/;"	m	class:Form	typeref:typename:unsigned const int
+beSigned	Form.cpp	/^void	Form::beSigned(const Bureaucrat& b)$/;"	f	class:Form	typeref:typename:void
+decrGrade	Bureaucrat.cpp	/^void		Bureaucrat::decrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+getExecGrade	Form.cpp	/^unsigned const int Form::getExecGrade(void)const$/;"	f	class:Form	typeref:typename:unsigned const int
+getGrade	Bureaucrat.cpp	/^unsigned int Bureaucrat::getGrade(void)const$/;"	f	class:Bureaucrat	typeref:typename:unsigned int
+getName	Bureaucrat.cpp	/^std::string	Bureaucrat::getName(void)const$/;"	f	class:Bureaucrat	typeref:typename:std::string
+getName	Form.cpp	/^std::string	Form::getName(void)const$/;"	f	class:Form	typeref:typename:std::string
+getSign	Form.cpp	/^bool	Form::getSign(void)const$/;"	f	class:Form	typeref:typename:bool
+getSignGrade	Form.cpp	/^unsigned const int Form::getSignGrade(void)const$/;"	f	class:Form	typeref:typename:unsigned const int
+incrGrade	Bureaucrat.cpp	/^void		Bureaucrat::incrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+operator =	Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+operator =	Form.cpp	/^Form &Form::operator=(const Form &copy)$/;"	f	class:Form	typeref:typename:Form &
+what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeTooHighException	typeref:typename:const char *
+what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
+~Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
+~Form	Form.cpp	/^Form::~Form()$/;"	f	class:Form

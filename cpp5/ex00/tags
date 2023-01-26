@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+BUREAUCRAT_HPP	Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : _name("Default"), _grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(const Bureaucrat &copy)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string name, unsigned int grade) : _name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+GradeTooHighException	Bureaucrat.hpp	/^	  class	GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	Bureaucrat.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+_grade	Bureaucrat.hpp	/^	  unsigned int	_grade;$/;"	m	class:Bureaucrat	typeref:typename:unsigned int
+_name	Bureaucrat.hpp	/^	  std::string	_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string
+decrGrade	Bureaucrat.cpp	/^void		Bureaucrat::decrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+getGrade	Bureaucrat.cpp	/^unsigned int Bureaucrat::getGrade(void)const$/;"	f	class:Bureaucrat	typeref:typename:unsigned int
+getName	Bureaucrat.cpp	/^std::string	Bureaucrat::getName(void)const$/;"	f	class:Bureaucrat	typeref:typename:std::string
+incrGrade	Bureaucrat.cpp	/^void		Bureaucrat::incrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+main	main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+operator =	Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+~Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
