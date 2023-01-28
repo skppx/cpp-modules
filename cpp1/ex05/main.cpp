@@ -7,10 +7,10 @@ int main(void)
 
 	do
 	{
-		std::cout << "Enter a level: ";
-		std::cin >> input;
+		std::cout << "Enter a level: " << std::flush;
+		std::getline (std::cin, input);
 		harl.complain(input);
-	}while (1);
+	}while (std::cin.good());
 
 	return 0;
 }

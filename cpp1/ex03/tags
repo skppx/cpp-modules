@@ -1,6 +1,28 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+HumanA	HumanA.cpp	/^HumanA::HumanA(std::string name, Weapon & weapon) : _name(name), _weapon(weapon)$/;"	f	class:HumanA
+HumanA	HumanA.hpp	/^class HumanA$/;"	c
+HumanB	HumanB.cpp	/^HumanB::HumanB(std::string name) : _name(name)$/;"	f	class:HumanB
+HumanB	HumanB.hpp	/^class HumanB$/;"	c
+WEAPON_HPP	Weapon.hpp	/^#define WEAPON_HPP$/;"	d
+Weapon	Weapon.cpp	/^Weapon::Weapon(std::string type)$/;"	f	class:Weapon
+Weapon	Weapon.hpp	/^class Weapon$/;"	c
+_name	HumanA.hpp	/^		std::string _name;$/;"	m	class:HumanA	typeref:typename:std::string
+_name	HumanB.hpp	/^		std::string _name;$/;"	m	class:HumanB	typeref:typename:std::string
+_type	Weapon.hpp	/^		std::string _type;$/;"	m	class:Weapon	typeref:typename:std::string
+_weapon	HumanA.hpp	/^		Weapon&		_weapon;$/;"	m	class:HumanA	typeref:typename:Weapon &
+_weapon	HumanB.hpp	/^		Weapon*		_weapon;$/;"	m	class:HumanB	typeref:typename:Weapon *
+attack	HumanA.cpp	/^void	HumanA::attack(void)$/;"	f	class:HumanA	typeref:typename:void
+attack	HumanB.cpp	/^void	HumanB::attack(void) const$/;"	f	class:HumanB	typeref:typename:void
+getType	Weapon.cpp	/^std::string const & Weapon::getType(void)$/;"	f	class:Weapon	typeref:typename:std::string const &
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+setType	Weapon.cpp	/^void	Weapon::setType(std::string type)$/;"	f	class:Weapon	typeref:typename:void
+setWeapon	HumanB.cpp	/^void	HumanB::setWeapon(Weapon & weapon)$/;"	f	class:HumanB	typeref:typename:void
+~HumanA	HumanA.cpp	/^HumanA::~HumanA()$/;"	f	class:HumanA
+~HumanB	HumanB.cpp	/^HumanB::~HumanB()$/;"	f	class:HumanB
+~Weapon	Weapon.cpp	/^Weapon::~Weapon()$/;"	f	class:Weapon

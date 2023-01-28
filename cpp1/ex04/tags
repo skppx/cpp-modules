@@ -1,6 +1,15 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+SEV_HPP	Sed.hpp	/^#define SEV_HPP$/;"	d
+Sed	Sed.cpp	/^Sed::Sed(std::string filename) : _infile(filename)$/;"	f	class:Sed
+Sed	Sed.hpp	/^class Sed$/;"	c
+_infile	Sed.hpp	/^		std::string _infile;$/;"	m	class:Sed	typeref:typename:std::string
+_outfile	Sed.hpp	/^		std::string _outfile;$/;"	m	class:Sed	typeref:typename:std::string
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f	typeref:typename:int
+replace	Sed.cpp	/^void	Sed::replace(std::string s1, std::string s2)$/;"	f	class:Sed	typeref:typename:void
+~Sed	Sed.cpp	/^Sed::~Sed(void)$/;"	f	class:Sed

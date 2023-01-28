@@ -25,21 +25,17 @@ void	Sed::replace(std::string s1, std::string s2)
 		return;
 	}
 
+	size_t pos;
 	std::string line;
 	while (std::getline(input, line))
 	{
-		std::string new_line;
-		for (int i = 0; i < (int)line.length(); i++)
+		pos = 0;
+		while((pos = line.find(s1, pos)) != std::string::npos)
 		{
-			if (line.substr(i, s1.length()) == s1)
-			{
-				new_line += s2;
-				i += s1.length() - 1;
-			}
-			else
-				new_line += line[i];
+			line.replace(pos, s1.length(), s2);
+			pos += s2.length();
 		}
-		output << new_line << std::endl;
+		output << line << std::endl;
 	}
 
 	input.close();

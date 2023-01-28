@@ -1,6 +1,17 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+HARL_HPP	Harl.hpp	/^#define HARL_HPP$/;"	d
+Harl	Harl.cpp	/^Harl::Harl()$/;"	f	class:Harl
+Harl	Harl.hpp	/^class Harl$/;"	c
+complain	Harl.cpp	/^void Harl::complain(std::string level) $/;"	f	class:Harl	typeref:typename:void
+debug	Harl.cpp	/^void Harl::debug(void) $/;"	f	class:Harl	typeref:typename:void
+error	Harl.cpp	/^void Harl::error(void) $/;"	f	class:Harl	typeref:typename:void
+info	Harl.cpp	/^void Harl::info(void) $/;"	f	class:Harl	typeref:typename:void
+main	main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+warning	Harl.cpp	/^void Harl::warning(void) $/;"	f	class:Harl	typeref:typename:void
+~Harl	Harl.cpp	/^Harl::~Harl()$/;"	f	class:Harl
