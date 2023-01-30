@@ -5,7 +5,7 @@
 #include "WrongCat.hpp"
 
 int main()
-{
+{/*
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 
@@ -25,7 +25,7 @@ int main()
 	}
 
 	std::cout << "-------------------" << std::endl;
-
+*/
 	Animal *tab[20];
 
     for (int i = 0; i < 20; i++)

@@ -19,6 +19,14 @@ GradeTooHighException	Bureaucrat.hpp	/^	  class	GradeTooHighException : public s
 GradeTooHighException	Form.hpp	/^	  class	GradeTooHighException : public std::exception$/;"	c	class:Form
 GradeTooLowException	Bureaucrat.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
 GradeTooLowException	Form.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Form
+RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm() : Form()$/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &copy) : Form(copy), _target(/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(const std::string &target) : Form("RRF", 72, 45), _targ/;"	f	class:RobotomyRequestForm
+SHRUBBERYCREATIONFORM_HPP	ShrubberyCreationForm.hpp	/^#define SHRUBBERYCREATIONFORM_HPP$/;"	d
+ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm() : Form()$/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &copy) : Form(copy), _t/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target) : Form("SCF", 145, 137),/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	ShrubberyCreationForm.hpp	/^class ShrubberyCreationForm : public Form$/;"	c
 _exec_grade	Form.hpp	/^	  unsigned const int	_exec_grade;$/;"	m	class:Form	typeref:typename:unsigned const int
 _grade	Bureaucrat.hpp	/^	  unsigned int	_grade;$/;"	m	class:Bureaucrat	typeref:typename:unsigned int
 _is_signed	Form.hpp	/^	  bool					_is_signed;$/;"	m	class:Form	typeref:typename:bool
@@ -27,6 +35,8 @@ _name	Form.hpp	/^	  const std::string			_name;$/;"	m	class:Form	typeref:typename
 _sign_grade	Form.hpp	/^	  unsigned const int	_sign_grade;$/;"	m	class:Form	typeref:typename:unsigned const int
 beSigned	Form.cpp	/^void	Form::beSigned(const Bureaucrat& b)$/;"	f	class:Form	typeref:typename:void
 decrGrade	Bureaucrat.cpp	/^void		Bureaucrat::decrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+execute	RobotomyRequestForm.cpp	/^void RobotomyRequestForm::execute(const Bureaucrat& executor)const$/;"	f	class:RobotomyRequestForm	typeref:typename:void
+execute	ShrubberyCreationForm.cpp	/^void	ShrubberyCreationForm::execute(const Bureaucrat& executor) const$/;"	f	class:ShrubberyCreationForm	typeref:typename:void
 getExecGrade	Form.cpp	/^unsigned int Form::getExecGrade(void)const$/;"	f	class:Form	typeref:typename:unsigned int
 getGrade	Bureaucrat.cpp	/^unsigned int Bureaucrat::getGrade(void)const$/;"	f	class:Bureaucrat	typeref:typename:unsigned int
 getName	Bureaucrat.cpp	/^std::string	Bureaucrat::getName(void)const$/;"	f	class:Bureaucrat	typeref:typename:std::string
@@ -39,6 +49,8 @@ operator <<	Bureaucrat.cpp	/^std::ostream& operator<<(std::ostream& o, const Bur
 operator <<	Form.cpp	/^std::ostream& operator<<(std::ostream& o, const Form& rhs)$/;"	f	typeref:typename:std::ostream &
 operator =	Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
 operator =	Form.cpp	/^Form &Form::operator=(const Form &copy)$/;"	f	class:Form	typeref:typename:Form &
+operator =	RobotomyRequestForm.cpp	/^RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &copy)$/;"	f	class:RobotomyRequestForm	typeref:typename:RobotomyRequestForm &
+operator =	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationForm &copy)$/;"	f	class:ShrubberyCreationForm	typeref:typename:ShrubberyCreationForm &
 signForm	Bureaucrat.cpp	/^void		Bureaucrat::signForm(Form& form)$/;"	f	class:Bureaucrat	typeref:typename:void
 what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
 what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
@@ -46,3 +58,5 @@ what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeToo
 what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
 ~Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
 ~Form	Form.cpp	/^Form::~Form()$/;"	f	class:Form
+~RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::~RobotomyRequestForm()$/;"	f	class:RobotomyRequestForm
+~ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::~ShrubberyCreationForm()$/;"	f	class:ShrubberyCreationForm

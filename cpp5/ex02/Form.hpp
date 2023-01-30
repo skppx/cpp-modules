@@ -9,7 +9,6 @@ class Bureaucrat;
 class Form
 {
    public:
-      Form();
       Form(const Form& copy);
 	  Form(const std::string _name, const int _grade_sign, const int _grade_exec);
       virtual ~Form();
@@ -41,7 +40,7 @@ class Form
 	  void			beSigned(const Bureaucrat& b);
 
    protected:
-   private:
+	  Form();
 	  const std::string			_name;
 	  bool					_is_signed;
 	  unsigned const int	_sign_grade;

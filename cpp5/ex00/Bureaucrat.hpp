@@ -42,5 +42,7 @@ class Bureaucrat
 	  unsigned int	_grade;
 };
 
+std::ostream& operator<<(std::ostream& o, const Bureaucrat& rhs);
+
 #endif // BUREAUCRAT_H
 

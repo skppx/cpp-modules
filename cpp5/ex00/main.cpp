@@ -4,8 +4,53 @@ int main(void)
 {
 	try
 	{
-		Bureaucrat("Bob", 200);
 		Bureaucrat("Bob", 0);
+	}
+
+	catch(std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+	
+	try
+	{
+		Bureaucrat("Bob", 200);
+	}
+
+	catch(std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+	
+	try
+	{
+		Bureaucrat Bob = Bureaucrat("Bob", 1);
+		Bob.incrGrade();
+	}
+
+	catch(std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+
+	try
+	{
+		Bureaucrat Bob = Bureaucrat("Bob", 150);
+		Bob.decrGrade();
+	}
+
+	catch(std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+
+	try
+	{
+		Bureaucrat Bob = Bureaucrat("Bob", 42);
+		Bob.incrGrade();
+		std::cout << Bob << std::endl;
+		Bob.decrGrade();
+		std::cout << Bob << std::endl;
 	}
 
 	catch(std::exception& e)
