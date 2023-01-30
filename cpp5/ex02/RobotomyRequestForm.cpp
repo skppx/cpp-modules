@@ -39,9 +39,10 @@ void RobotomyRequestForm::execute(const Bureaucrat& executor)const
 		throw Form::GradeTooLowException();
 	else
 	{
-		int number = srand(time(0));
+		srand(time(0));
+		int number = rand();
 		if (number % 2)
-			std::cout << "*bruit de perceuses* " << _target << " has been robotomizedi" << std::endl;
+			std::cout << "*bruit de perceuses* " << _target << " has been robotomized" << std::endl;
 		else
 			std::cout << "*bruit de perceuses* " << _target << " robotomization failed" << std::endl;
 	}

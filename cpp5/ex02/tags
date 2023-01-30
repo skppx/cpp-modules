@@ -1,10 +1,14 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/nfs/homes/phabets/cercle3/cppgit/cpp5/ex02/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	//
+!_TAG_PROGRAM_VERSION	5.9.0	//
 BUREAUCRAT_HPP	Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
 Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : _name("Default"), _grade(150)$/;"	f	class:Bureaucrat
 Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(const Bureaucrat &copy)$/;"	f	class:Bureaucrat
@@ -19,9 +23,17 @@ GradeTooHighException	Bureaucrat.hpp	/^	  class	GradeTooHighException : public s
 GradeTooHighException	Form.hpp	/^	  class	GradeTooHighException : public std::exception$/;"	c	class:Form
 GradeTooLowException	Bureaucrat.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
 GradeTooLowException	Form.hpp	/^	  class	GradeTooLowException : public std::exception$/;"	c	class:Form
+NotSignedException	Form.hpp	/^	  class	NotSignedException : public std::exception$/;"	c	class:Form
+PRESIDENTIALPARDONFORM_HPP	PresidentialPardonForm.hpp	/^#define PRESIDENTIALPARDONFORM_HPP$/;"	d
+PresidentialPardonForm	PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm() : Form()$/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &copy) : Form(copy),/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(const std::string &target) : Form("PPF", 25, 5), /;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	PresidentialPardonForm.hpp	/^class PresidentialPardonForm : public Form$/;"	c
+ROBOTOMYREQUESTFORM_HPP	RobotomyRequestForm.hpp	/^#define ROBOTOMYREQUESTFORM_HPP$/;"	d
 RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm() : Form()$/;"	f	class:RobotomyRequestForm
 RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &copy) : Form(copy), _target(/;"	f	class:RobotomyRequestForm
 RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(const std::string &target) : Form("RRF", 72, 45), _targ/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	RobotomyRequestForm.hpp	/^class RobotomyRequestForm : public Form$/;"	c
 SHRUBBERYCREATIONFORM_HPP	ShrubberyCreationForm.hpp	/^#define SHRUBBERYCREATIONFORM_HPP$/;"	d
 ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm() : Form()$/;"	f	class:ShrubberyCreationForm
 ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &copy) : Form(copy), _t/;"	f	class:ShrubberyCreationForm
@@ -31,12 +43,18 @@ _exec_grade	Form.hpp	/^	  unsigned const int	_exec_grade;$/;"	m	class:Form	typer
 _grade	Bureaucrat.hpp	/^	  unsigned int	_grade;$/;"	m	class:Bureaucrat	typeref:typename:unsigned int
 _is_signed	Form.hpp	/^	  bool					_is_signed;$/;"	m	class:Form	typeref:typename:bool
 _name	Bureaucrat.hpp	/^	  std::string	_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string
-_name	Form.hpp	/^	  const std::string			_name;$/;"	m	class:Form	typeref:typename:const std::string
+_name	Form.hpp	/^	  const std::string		_name;$/;"	m	class:Form	typeref:typename:const std::string
 _sign_grade	Form.hpp	/^	  unsigned const int	_sign_grade;$/;"	m	class:Form	typeref:typename:unsigned const int
+_target	Form.hpp	/^	  std::string			_target;$/;"	m	class:Form	typeref:typename:std::string
+_target	PresidentialPardonForm.hpp	/^	  std::string _target;$/;"	m	class:PresidentialPardonForm	typeref:typename:std::string
+_target	RobotomyRequestForm.hpp	/^	  std::string _target;$/;"	m	class:RobotomyRequestForm	typeref:typename:std::string
+_target	ShrubberyCreationForm.hpp	/^	  std::string _target;$/;"	m	class:ShrubberyCreationForm	typeref:typename:std::string
 beSigned	Form.cpp	/^void	Form::beSigned(const Bureaucrat& b)$/;"	f	class:Form	typeref:typename:void
 decrGrade	Bureaucrat.cpp	/^void		Bureaucrat::decrGrade(void)$/;"	f	class:Bureaucrat	typeref:typename:void
+execute	PresidentialPardonForm.cpp	/^void	PresidentialPardonForm::execute(const Bureaucrat& executor) const$/;"	f	class:PresidentialPardonForm	typeref:typename:void
 execute	RobotomyRequestForm.cpp	/^void RobotomyRequestForm::execute(const Bureaucrat& executor)const$/;"	f	class:RobotomyRequestForm	typeref:typename:void
 execute	ShrubberyCreationForm.cpp	/^void	ShrubberyCreationForm::execute(const Bureaucrat& executor) const$/;"	f	class:ShrubberyCreationForm	typeref:typename:void
+executeForm	Bureaucrat.cpp	/^void		Bureaucrat::executeForm(Form const & form)$/;"	f	class:Bureaucrat	typeref:typename:void
 getExecGrade	Form.cpp	/^unsigned int Form::getExecGrade(void)const$/;"	f	class:Form	typeref:typename:unsigned int
 getGrade	Bureaucrat.cpp	/^unsigned int Bureaucrat::getGrade(void)const$/;"	f	class:Bureaucrat	typeref:typename:unsigned int
 getName	Bureaucrat.cpp	/^std::string	Bureaucrat::getName(void)const$/;"	f	class:Bureaucrat	typeref:typename:std::string
@@ -49,6 +67,7 @@ operator <<	Bureaucrat.cpp	/^std::ostream& operator<<(std::ostream& o, const Bur
 operator <<	Form.cpp	/^std::ostream& operator<<(std::ostream& o, const Form& rhs)$/;"	f	typeref:typename:std::ostream &
 operator =	Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
 operator =	Form.cpp	/^Form &Form::operator=(const Form &copy)$/;"	f	class:Form	typeref:typename:Form &
+operator =	PresidentialPardonForm.cpp	/^PresidentialPardonForm &PresidentialPardonForm::operator=(const PresidentialPardonForm &copy)$/;"	f	class:PresidentialPardonForm	typeref:typename:PresidentialPardonForm &
 operator =	RobotomyRequestForm.cpp	/^RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &copy)$/;"	f	class:RobotomyRequestForm	typeref:typename:RobotomyRequestForm &
 operator =	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationForm &copy)$/;"	f	class:ShrubberyCreationForm	typeref:typename:ShrubberyCreationForm &
 signForm	Bureaucrat.cpp	/^void		Bureaucrat::signForm(Form& form)$/;"	f	class:Bureaucrat	typeref:typename:void
@@ -56,7 +75,9 @@ what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucr
 what	Bureaucrat.hpp	/^			  const char* what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
 what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeTooHighException	typeref:typename:const char *
 what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
+what	Form.hpp	/^			  const char* what() const throw()$/;"	f	class:Form::NotSignedException	typeref:typename:const char *
 ~Bureaucrat	Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
 ~Form	Form.cpp	/^Form::~Form()$/;"	f	class:Form
+~PresidentialPardonForm	PresidentialPardonForm.cpp	/^PresidentialPardonForm::~PresidentialPardonForm()$/;"	f	class:PresidentialPardonForm
 ~RobotomyRequestForm	RobotomyRequestForm.cpp	/^RobotomyRequestForm::~RobotomyRequestForm()$/;"	f	class:RobotomyRequestForm
 ~ShrubberyCreationForm	ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::~ShrubberyCreationForm()$/;"	f	class:ShrubberyCreationForm

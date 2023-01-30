@@ -37,16 +37,18 @@ void	ShrubberyCreationForm::execute(const Bureaucrat& executor) const
 		throw Form::GradeTooLowException();
 	else
 	{
-		std::ofstream file(this->_target + "_shrubbery");
+		std::string str = (this->_target + "_shrubbery");
+		std::ofstream file(str.c_str());
 		file <<"               ,@@@@@@@," << std::endl;
 		file <<"       ,,,.   ,@@@@@@/@@,  .oo8888o." << std::endl;
-		file <<"    ,&%%&%&&%,@@@@@/@@@@@@,8888\88/8o" << std::endl;
-		file <<"   ,%&\%&&%&&%,@@@\@@@/@@@88\88888/88'" << std::endl;
-		file <<"   %&&%&%&/%&&%@@\@@/ /@@@88888\88888'" << std::endl;
-		file <<"   %&&%/ %&%%&&@@\ V /@@' `88\8 `/88'" << std::endl;
-		file <<"   `&%\ ` /%&'    |.|        \ '|8'" << std::endl;
+		file <<"    ,&\%%&%&&%,@@@@@/@@@@@@,8888\\88/8o" << std::endl;
+		file <<"   ,%&\\%&&%&&%,@@@\\@@@/@@@88\\88888/88'" << std::endl;
+		file <<"   %&&%&%&/%&&%@@\\@@/ /@@@88888\\88888'" << std::endl;
+		file <<"   %&&%/ %&%%&&@@\\ V /@@' `88\\8 `/88'" << std::endl;
+		file <<"   `&%\\ ` /%&'    |.|        \\ '|8'" << std::endl;
 		file <<"       |o|        | |         | |" << std::endl;
 		file <<"       |.|        | |         | |" << std::endl;
-		file <<" jgs \\/ ._\//_/__/  ,\_//__\\/.  \_//__/_" << std::endl;
+		file <<" jgs \\\\/ ._\\//_/__/  ,\\_//__\\\\/.  \\_//__/_" << std::endl;
 		file.close();
+	}
 }

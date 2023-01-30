@@ -1,4 +1,7 @@
 #include "Bureaucrat.hpp"
+#include "PresidentialPardonForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "ShrubberyCreationForm.hpp"
 #include "Form.hpp"
 #include <iostream>
 
@@ -60,7 +63,7 @@ int main(void)
 		std::cerr << e.what() << std::endl;
 	}*/
 
-    Bureaucrat    pattick("Patrick", 10);
+/*    Bureaucrat    pattick("Patrick", 10);
 
     std::cout << pattick << std::endl;
 
@@ -82,6 +85,11 @@ int main(void)
     {
         std::cerr << "Form initialisation error : "
         << e.what() << std::endl;
-    }
-
+    }*/
+	RobotomyRequestForm ppf = RobotomyRequestForm("Bob");
+	//std::cout << ppf << std::endl;
+	Bureaucrat Bob = Bureaucrat("Bob", 1);
+	Bob.signForm(ppf);
+	Bob.executeForm(ppf);
+	return (0);
 }

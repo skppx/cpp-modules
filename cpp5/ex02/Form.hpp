@@ -31,6 +31,15 @@ class Form
 				  return "Grade too low";
 			  }
 	  };
+	  
+	  class	NotSignedException : public std::exception
+	  {
+		  public:
+			  const char* what() const throw()
+			  {
+				  return "Not signed";
+			  }
+	  };
 
 
 	  std::string	getName(void)const;
@@ -38,13 +47,16 @@ class Form
 	  unsigned int getSignGrade(void)const;
 	  unsigned int getExecGrade(void)const;
 	  void			beSigned(const Bureaucrat& b);
+	  virtual void			execute(const Bureaucrat& executor)const = 0;
 
-   protected:
-	  Form();
-	  const std::string			_name;
+   private:
+	  const std::string		_name;
 	  bool					_is_signed;
 	  unsigned const int	_sign_grade;
 	  unsigned const int	_exec_grade;
+	protected:
+	  std::string			_target;
+	  Form();
 
 };
 
