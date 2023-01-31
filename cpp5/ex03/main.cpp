@@ -3,6 +3,7 @@
 #include "RobotomyRequestForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "Form.hpp"
+#include "Intern.hpp"
 #include <iostream>
 
 int main(void)
@@ -86,10 +87,9 @@ int main(void)
         std::cerr << "Form initialisation error : "
         << e.what() << std::endl;
     }*/
-	RobotomyRequestForm rrf = RobotomyRequestForm("Bob");
+	/*RobotomyRequestForm rrf = RobotomyRequestForm("Bob");
 	ShrubberyCreationForm scf = ShrubberyCreationForm("Bob");
 	PresidentialPardonForm ppf = PresidentialPardonForm("Bob");
-	PresidentialPardonForm ppf2 = PresidentialPardonForm("Jim");
 	std::cout << rrf << std::endl;
 	std::cout << scf << std::endl;
 	std::cout << ppf << std::endl;
@@ -102,7 +102,7 @@ int main(void)
 	Bob.executeForm(scf);
 	std::cout << "----------------------------" << std::endl;
 	Bob.signForm(ppf);
-	Bob.executeForm(ppf2);
+	Bob.executeForm(ppf);
 	std::cout << "----------------------------" << std::endl;
 	Jim.signForm(rrf);
 	Jim.executeForm(rrf);
@@ -112,11 +112,18 @@ int main(void)
 	std::cout << "----------------------------" << std::endl;
 	Jim.signForm(ppf);
 	Jim.executeForm(ppf);
-	Bob.executeForm(ppf);
 	std::cout << "----------------------------" << std::endl;
 	std::cout << rrf << std::endl;
 	std::cout << scf << std::endl;
 	std::cout << ppf << std::endl;
-	std::cout << "----------------------------" << std::endl;
+	std::cout << "----------------------------" << std::endl;*/
+
+	Intern intern;
+	Form* form = intern.makeForm("ShrubberyCreationForm", "Bob");
+	Form* form2 = intern.makeForm("someForm", "Bob");
+	std::cout << *form << std::endl;
+	form2 = 0;
+	delete form;
+
 	return (0);
 }
