@@ -86,10 +86,35 @@ int main(void)
         std::cerr << "Form initialisation error : "
         << e.what() << std::endl;
     }*/
-	RobotomyRequestForm ppf = RobotomyRequestForm("Bob");
-	//std::cout << ppf << std::endl;
+	RobotomyRequestForm rrf = RobotomyRequestForm("Bob");
+	ShrubberyCreationForm scf = ShrubberyCreationForm("Bob");
+	PresidentialPardonForm ppf = PresidentialPardonForm("Bob");
+	std::cout << rrf << std::endl;
+	std::cout << scf << std::endl;
+	std::cout << ppf << std::endl;
 	Bureaucrat Bob = Bureaucrat("Bob", 1);
+	Bureaucrat Jim = Bureaucrat("Jim", 42);
+	Bob.signForm(rrf);
+	Bob.executeForm(rrf);
+	std::cout << "----------------------------" << std::endl;
+	Bob.signForm(scf);
+	Bob.executeForm(scf);
+	std::cout << "----------------------------" << std::endl;
 	Bob.signForm(ppf);
 	Bob.executeForm(ppf);
+	std::cout << "----------------------------" << std::endl;
+	Jim.signForm(rrf);
+	Jim.executeForm(rrf);
+	std::cout << "----------------------------" << std::endl;
+	Jim.signForm(scf);
+	Jim.executeForm(scf);
+	std::cout << "----------------------------" << std::endl;
+	Jim.signForm(ppf);
+	Jim.executeForm(ppf);
+	std::cout << "----------------------------" << std::endl;
+	std::cout << rrf << std::endl;
+	std::cout << scf << std::endl;
+	std::cout << ppf << std::endl;
+	std::cout << "----------------------------" << std::endl;
 	return (0);
 }
