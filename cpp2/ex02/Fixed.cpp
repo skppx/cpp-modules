@@ -83,7 +83,7 @@ bool	Fixed::operator>=(const Fixed &copy) const
 
 bool	Fixed::operator<=(const Fixed &copy) const
 {
-	return this->getRawBits() =< copy.getRawBits();
+	return this->getRawBits() <= copy.getRawBits();
 }
 
 bool	Fixed::operator==(const Fixed &copy) const
@@ -131,14 +131,14 @@ Fixed	Fixed::operator--()
 Fixed	Fixed::operator++(int)
 {
 	Fixed tmp = *this;
-	++this->_nbFixedPoint
+	this->_nbFixedPoint++;
 	return tmp;
 }
 
 Fixed	Fixed::operator--(int)
 {
 	Fixed tmp = *this;
-	--this->_nbFixedPoint
+	this->_nbFixedPoint--;
 	return tmp;
 }
 

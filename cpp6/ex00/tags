@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/nfs/homes/phabets/cercle3/cppgit/cpp6/ex00/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+CHAR	gpt.cpp	/^  CHAR,$/;"	e	enum:Type	file:
+DOUBLE	gpt.cpp	/^  DOUBLE$/;"	e	enum:Type	file:
+FLOAT	gpt.cpp	/^  FLOAT,$/;"	e	enum:Type	file:
+INT	gpt.cpp	/^  INT,$/;"	e	enum:Type	file:
+Type	gpt.cpp	/^enum Type {$/;"	g	file:
+cast_and_print	gpt.cpp	/^void cast_and_print(const std::string& str) {$/;"	f	typeref:typename:void
+get_type	gpt.cpp	/^Type get_type(const std::string& str) {$/;"	f	typeref:typename:Type
+is_printable	gpt.cpp	/^bool is_printable(char c) {$/;"	f	typeref:typename:bool
+main	main.cpp	/^int main(int ac, char **av)$/;"	f	typeref:typename:int
+toChar	main.cpp	/^void	toChar(double val)$/;"	f	typeref:typename:void
+toFloat	main.cpp	/^void	toFloat(double val)$/;"	f	typeref:typename:void
+toInt	main.cpp	/^void	toInt(double val)$/;"	f	typeref:typename:void
