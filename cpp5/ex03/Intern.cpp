@@ -34,10 +34,12 @@ Form*	Intern::makeForm(std::string form_name, std::string target)
 
 	Form* (Intern::*createForm[3])(std::string) = {&Intern::makeSCF, &Intern::makePPF, &Intern::makeRRF};
 
+	std::cout << "Intern try to create form: " << form_name << std::endl;
 	for (int i = 0; i < 3; i++)
 	{
 		if (form_name == classNames[i])
 		{
+			std::cout << "Intern create form: " << form_name << std::endl;
 			Form *form = (this->*createForm[i])(target);
 			return form;
 		}
