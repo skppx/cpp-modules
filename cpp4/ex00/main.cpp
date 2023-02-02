@@ -18,10 +18,20 @@ int main()
 	
 	const WrongAnimal* meeta = new WrongAnimal();
 	const WrongAnimal* ii = new WrongCat();
+	const WrongCat*	jj= new WrongCat();
 
 	std::cout << ii->getType() << " " << std::endl;
-	ii->makeSound(); //will output the cat sound!
+	std::cout << jj->getType() << " " << std::endl;
+	ii->makeSound(); //will output the WrongAnimal sound!
+	jj->makeSound(); //will output the WrongCat sound!
 	meeta->makeSound();
+
+	delete i;
+	delete j;
+	delete meta;
+	delete ii;
+	delete jj;
+	delete meeta;
 
 	return 0;
 }

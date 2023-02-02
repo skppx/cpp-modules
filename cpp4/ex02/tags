@@ -1,10 +1,14 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/nfs/homes/phabets/cercle3/cppgit/cpp4/ex02/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	//
+!_TAG_PROGRAM_VERSION	5.9.0	//
 ANIMAL_HPP	Animal.hpp	/^#define ANIMAL_HPP$/;"	d
 Animal	Animal.cpp	/^Animal::Animal(): _type("animal")$/;"	f	class:Animal
 Animal	Animal.cpp	/^Animal::Animal(const Animal& copy)$/;"	f	class:Animal
@@ -34,6 +38,8 @@ _brain	Dog.hpp	/^		Brain* _brain;$/;"	m	class:Dog	typeref:typename:Brain *
 _ideas	Brain.hpp	/^		std::string _ideas[100];$/;"	m	class:Brain	typeref:typename:std::string[100]
 _type	Animal.hpp	/^		std::string _type;$/;"	m	class:Animal	typeref:typename:std::string
 _type	WrongAnimal.hpp	/^		std::string _type;$/;"	m	class:WrongAnimal	typeref:typename:std::string
+getIdea	Cat.cpp	/^std::string	Cat::getIdea(int index)$/;"	f	class:Cat	typeref:typename:std::string
+getIdea	Dog.cpp	/^std::string	Dog::getIdea(int index)$/;"	f	class:Dog	typeref:typename:std::string
 getType	Animal.cpp	/^std::string Animal::getType(void)const$/;"	f	class:Animal	typeref:typename:std::string
 getType	WrongAnimal.cpp	/^std::string WrongAnimal::getType(void)const$/;"	f	class:WrongAnimal	typeref:typename:std::string
 main	main.cpp	/^int main()$/;"	f	typeref:typename:int
@@ -48,6 +54,8 @@ operator =	Cat.cpp	/^Cat &Cat::operator=(const Cat &copy)$/;"	f	class:Cat	typere
 operator =	Dog.cpp	/^Dog &Dog::operator=(const Dog &copy)$/;"	f	class:Dog	typeref:typename:Dog &
 operator =	WrongAnimal.cpp	/^WrongAnimal& WrongAnimal::operator=(const WrongAnimal& copy)$/;"	f	class:WrongAnimal	typeref:typename:WrongAnimal &
 operator =	WrongCat.cpp	/^WrongCat &WrongCat::operator=(const WrongCat &copy)$/;"	f	class:WrongCat	typeref:typename:WrongCat &
+setIdea	Cat.cpp	/^void		Cat::setIdea(int index, std::string idea)$/;"	f	class:Cat	typeref:typename:void
+setIdea	Dog.cpp	/^void		Dog::setIdea(int index, std::string idea)$/;"	f	class:Dog	typeref:typename:void
 ~Animal	Animal.cpp	/^Animal::~Animal()$/;"	f	class:Animal
 ~Brain	Brain.cpp	/^Brain::~Brain(void)$/;"	f	class:Brain
 ~Cat	Cat.cpp	/^Cat::~Cat()$/;"	f	class:Cat

@@ -33,3 +33,13 @@ void	Dog::makeSound(void)const
 {
 	std::cout << "Ouaf" << std::endl;
 }
+
+std::string	Dog::getIdea(int index)
+{
+	return _brain->_ideas[index];
+}
+
+void		Dog::setIdea(int index, std::string idea)
+{
+	_brain->_ideas[index] = idea;
+}

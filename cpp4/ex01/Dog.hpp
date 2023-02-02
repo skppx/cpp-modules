@@ -15,7 +15,9 @@ class Dog : public Animal
 		~Dog();
 		Dog &operator=(const Dog& copy);
 
-		void	makeSound(void)const;
+		std::string		getIdea(int index);
+		void			setIdea(int index, std::string idea);
+		void			makeSound(void)const;
 };
 
 #endif

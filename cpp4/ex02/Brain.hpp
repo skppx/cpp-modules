@@ -10,8 +10,6 @@ class Brain
 		Brain(const Brain& copy);
 		virtual ~Brain();
 		Brain &operator=(const Brain& copy);
-
-	private:
 		std::string _ideas[100];
 };
 
