@@ -9,7 +9,18 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
-ARRAY_HPP	Array.hpp	/^#define ARRAY_HPP$/;"	d
-Array	Array.hpp	/^		Array() : array(new T[0]) {}$/;"	f	class:Array
-Array	Array.hpp	/^		Array(unsigned int n) : array(new T[n]) {}$/;"	f	class:Array
+ARRAY_HPP	Array.hpp	/^#define ARRAY_HPP /;"	d
+Array	Array.hpp	/^		Array() : _size(0), _array(new T[0]) {}$/;"	f	class:Array
+Array	Array.hpp	/^		Array(const Array& copy) : _size(copy.size()), _array(new T[copy.size()])$/;"	f	class:Array
+Array	Array.hpp	/^		Array(unsigned int n) : _size(n), _array(new T[n]) {}$/;"	f	class:Array
 Array	Array.hpp	/^class Array$/;"	c
+MAX_VAL	main.cpp	/^#define MAX_VAL /;"	d	file:
+WrongIndex	Array.hpp	/^		class WrongIndex : public std::exception$/;"	c	class:Array
+_array	Array.hpp	/^		T*				_array;$/;"	m	class:Array	typeref:typename:T *
+_size	Array.hpp	/^		unsigned int	_size;$/;"	m	class:Array	typeref:typename:unsigned int
+main	main.cpp	/^int main(int, char**)$/;"	f	typeref:typename:int
+operator =	Array.hpp	/^		Array& operator=(const Array& copy)$/;"	f	class:Array	typeref:typename:Array &
+operator []	Array.hpp	/^		T& operator [](unsigned int i) const$/;"	f	class:Array	typeref:typename:T &
+size	Array.hpp	/^		unsigned int size(void) const$/;"	f	class:Array	typeref:typename:unsigned int
+what	Array.hpp	/^				const char* what() const throw()$/;"	f	class:Array::WrongIndex	typeref:typename:const char *
+~Array	Array.hpp	/^		~Array(void)$/;"	f	class:Array
