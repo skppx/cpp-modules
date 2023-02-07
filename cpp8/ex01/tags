@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/mnt/nfs/homes/phabets/cercle3/cppgit/cpp8/ex01/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+SPAN_HPP	Span.hpp	/^#define SPAN_HPP$/;"	d
+Span	Span.cpp	/^Span::Span()$/;"	f	class:Span
+Span	Span.cpp	/^Span::Span(const Span &copy)$/;"	f	class:Span
+Span	Span.cpp	/^Span::Span(const unsigned int N) : _N(N)$/;"	f	class:Span
+Span	Span.hpp	/^class Span$/;"	c
+_N	Span.hpp	/^	  unsigned int _N;$/;"	m	class:Span	typeref:typename:unsigned int
+_tab	Span.hpp	/^	  std::vector<int> _tab;$/;"	m	class:Span	typeref:typename:std::vector<int>
+addNumber	Span.cpp	/^void	Span::addNumber(int N)$/;"	f	class:Span	typeref:typename:void
+main	test.cpp	/^int main()$/;"	f	typeref:typename:int
+operator =	Span.cpp	/^Span &Span::operator=(const Span &copy)$/;"	f	class:Span	typeref:typename:Span &
+print	test.cpp	/^void print(std::vector <int> const &a) {$/;"	f	typeref:typename:void
+~Span	Span.cpp	/^Span::~Span()$/;"	f	class:Span
